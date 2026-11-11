@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPA CAAOH</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="css/contactos.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/subir.css">
+  
+
+</head>
+<body>
+    <div id="inicio"></div>
+    <!--  
+    <div id="preloader">
+        <img src="img/preloader.gif" alt="">
+    </div>
+    -->
+    <header id="header">
+        <div class="container">
+            <div id="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <!-- Menu Hamburguesa -->
+            <div id="btnmenu">
+            <label class="fa-solid fa-bars" id="menu" onclick="llamar()"></label>
+            </div>
+            <nav class="botonera" id="botonera">
+                <ul>
+                    <li><a href="#inicio" class="active">INICIO</a></li>
+                    <li><a href="#nosotros">NOSOTROS</a></li>
+                    <li><a href="#galeria">GALERIA</a></li>
+                    <li><a href="#contactos">CONTACTOS</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+ 
+
+    <div class="banner">
+    <div class="overlay">
+        <div class="cont-banner">
+            <h2>SPA CAOH</h2>
+            <p>Ven y Relajate con Nosotros</p>
+            <button id="boton" onclick="alert('Gracias por Suscribirse')">Suscribirse</button>
+        </div>
+    </div>
+    </div>
+
+    <a class="fa-sharp fa-solid fa-caret-up" id="subir" href="#inicio"></a>
+    
+    
+    <main id="nosotros">
+        <h2 >Nosotros</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum dolorem at quasi quia esse nisi repudiandae tenetur fuga mollitia exercitationem pariatur similique, a nam animi magnam perspiciatis minima ex fugit!
+        Officiis quia omnis eos qui velit ab. Molestias placeat nobis explicabo magnam quas aliquam quaerat architecto, amet rem excepturi enim. Natus eaque nulla numquam iusto ipsam unde repellat dicta assumenda.
+        Placeat, dignissimos veniam! Deserunt veniam doloremque libero possimus officia, rem voluptas aliquam facere dolore vel voluptatibus est ipsa quidem laborum sit recusandae sed iste voluptate nam aut? Cupiditate, eaque vero.</p>
+         <img src="img/spa00.jpg" alt="" class="img-responsive" onmouseover="src=('img/spa01.jpg')" onmouseout="src=('img/spa00.jpg')">  
+    </main>
+
+    <section id="galeria">
+        <article>
+            <h2>NUESTRA GALERIA</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur minima voluptas magnam natus exercitationem nulla explicabo iusto voluptate laboriosam aliquid iure praesentium accusamus molestiae sint, autem dignissimos hic illum consequatur?</p>
+        </article>
+        <article style="display: flex; align-items: center;">
+            <label class="btn fa-solid fa-caret-left" onclick="atras()"></label>
+            <img src="img/spa01.jpg" alt="" id="img">
+            <label class="btn fa-solid fa-caret-right" onclick="adelante()"></label>
+        </article>
+    </section>
+
+    <div class="fondo-aside">
+        <h2 class="text-aside">NUESTROS CLIENTES</h2>
+        <div class="aside">
+            <aside>
+                <h3>Grandes Artistas</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odit voluptatum rerum labore nemo sint ex incidunt sequi nostrum ea dolores, tempora commodi explicabo praesentium, eligendi distinctio nesciunt eius quo.</p>
+            </aside>
+            <aside style="display: flex;justify-content: center;">
+                <img src="img/jennifer.jpg" alt="" class="img-aside" id="imagen" name="imagen">
+            </aside>
+        </div>
+    </div>
+
+
+    <div class="fondo-contactos" id="contactos">
+        <h2 class="text-contactos">CONTACTÁNOS</h2>
+        <div class="contactos">
+            <div class="contact">
+                <h3>UBICANOS EN:</h3>
+                <ul class="listas">
+                    <li>Arequipa</li>
+                    <li>Callao</li>
+                    <li>San Borja</li>
+                    <li>Santa Anita</li>
+                    <li>San Isidro</li>
+                    <li>San Juan de Lurigancho</li>
+                    <li>San Juan de Miraflores</li>
+                    <li>Miraflores</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <h3>ESCRIBENOS EN:</h3>
+                <div class="formulario">
+                    <form action="/validar" method="post">
+                        <p>Apellidos y Nombres</p>
+                        <input type="text" name="nombres" id="">
+                        <br>
+                        <p>Celular:</p>
+                        <input type="tel" name="celular" id="" maxlength="9">
+                        <br>
+                        <p>Correo Electronico:</p>
+                        <input type="email" name="correo" id="">
+                        <br>
+                        <p>Comentarios:</p>
+                        <textarea name="comentarios" id="" cols="30" rows="10"></textarea>
+                        <br>
+                        <input type="submit" value="ENVIAR">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fondo-footer">
+        <div class="footer">
+            <footer>
+                <img src="img/logo.png" alt="" width="180px" style="display:block;margin:auto;">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero rerum fugit aliquam.</p>
+            </footer>
+            <footer>
+                <h3>NUESTROS AUSPICIADORES</h3>
+                <ul class="auspi">
+                    <li>Tecnologia Zero 2026</li>
+                    <li>Universidad Tecnologica del Perú</li>
+                    <li>My Pets 2023</li>
+                    <li>Portafolio 2023</li>
+                </ul>
+            </footer>
+            <footer>
+                <h3>SIGUENOS EN NUESTRAS REDES</h3>
+                <div class="redes">
+                    <i class="btn fa-brands fa-facebook"></i>
+                    <i class="btn fa-brands fa-youtube"></i>
+                    <i class="btn fa-brands fa-twitter"></i>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <div class="fondo-cierre">
+        <div class="cierre">
+            <footer>
+                <p>Todos los Derechos Reservados al &copy; TECSUP</p>
+            </footer>
+            <footer>
+                <p>Creado y Desarrollado por Max Lima.</p>
+            </footer>
+        </div>
+    </div>
+
+    <div class="pie">
+        <p>Cualquier Copia de la Página sera legalemnte confirmada.</p>
+    </div>
+    <script src="https://kit.fontawesome.com/4173e70f97.js" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-4.0.0.js" integrity="sha256-9fsHeVnKBvqh3FB2HYu7g2xseAZ5MlN6Kz/qnkASV8U=" crossorigin="anonymous"></script>
+    <script>
+        $("body, html").hide().fadeIn(5000);
+    </script>
+</body>
+</html>
